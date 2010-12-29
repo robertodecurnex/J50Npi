@@ -5,14 +5,19 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-	<title>robertodecurnex/J50Npi @ GitHub</title>
+	<title>robertodecurnex/J50Nπ @ GitHub</title>
 	
 	<style type="text/css">
+    @font-face {
+      font-family: 'Josefin Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Josefin Sans'), local('JosefinSans'), url('http://themes.googleusercontent.com/font?kit=xgzbb53t8j-Mo-vYa23n5onF5uFdDttMLvmWuJdhhgs') format('truetype');
+    }
 		body {
   		margin-top: 1.0em;
   		background-color: #15b6a9;
-		  font-family: "Helvetica,Arial,FreeSans";
-  		color: #ffffff;
+		  font-family: 'Josefin Sans', serif; color: #ffffff;
     }
     #container {
       margin: 0 auto;
@@ -39,22 +44,18 @@
   <div id="container">
 
     <div class="download">
-      <a href="http://github.com/robertodecurnex/J50Npi/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/robertodecurnex/J50Npi/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+      <a href="http://github.com/robertodecurnex/J50Npi/zipball/master"> <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+      <a href="http://github.com/robertodecurnex/J50Npi/tarball/master"> <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
     </div>
 
-    <h1><a href="http://github.com/robertodecurnex/J50Npi">J50Npi</a>
-      <span class="small">by <a href="http://github.com/robertodecurnex">robertodecurnex</a></span></h1>
+    <h1><a href="http://github.com/robertodecurnex/J50Npi">J50Nπ</a></h1>
 
     <div class="description">
       Basic JSONP helper (pure JS)
     </div>
 
     <h2>Authors</h2>
-<p>Roberto Decurnex (nex.development@gmail.com)<br/><br/>      </p>
-
+    <p>Roberto Decurnex (nex.development@gmail.com)<br/></p>
 
     <h2>Download</h2>
     <p>
@@ -62,17 +63,26 @@
       <a href="http://github.com/robertodecurnex/J50Npi/zipball/master">zip</a> or
       <a href="http://github.com/robertodecurnex/J50Npi/tarball/master">tar</a> formats.
     </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/robertodecurnex/J50Npi</pre>
+    <p>
+      You can also clone the project with <a href="http://git-scm.com">Git</a> by running:
+      <pre>
+        $ git clone git://github.com/robertodecurnex/J50Npi
+      </pre>
     </p>
+
+    <h2>Quick Example</h2>
+    <pre>
+      var url = "http://domain/something.jsonp";  
+      var data = {};  
+      var callback = function(data){ alert(data.attribute_name)};
+
+      J50Npi.getJSON(url, data, callback);
+    </pre>
 
     <div class="footer">
       get the source code on GitHub : <a href="http://github.com/robertodecurnex/J50Npi">robertodecurnex/J50Npi</a>
     </div>
 
   </div>
-
-  
 </body>
 </html>
