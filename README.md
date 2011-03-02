@@ -18,6 +18,6 @@ var data = {};
 var callback = function(data){ alert(data.attribute_name)};
 
 J50Npi.getJSON(url, data, callback);</pre>
-  Note that the given url does not need a callback parameter. It will be set automatically to <b>J50Npi.sucess</b> that will be the one executing the given callback function.
+  Note that the given url does not need a callback parameter. It will be set automatically to <b>J50Npi.success</b> that will be the one executing the given callback function.
 </p>
 
