@@ -23,3 +23,33 @@ J50Npi.getJSON(url, data, callback);
 ```
 
 Note that the given url does not need a callback parameter. It will be set automatically to **J50Npi.success** that will be the one executing the given callback function.
+
+
+## Step by Step Beginner's Sample
+
+1. Open your Browser
+
+2. Open a non javascript intensive page; e.g. http://robertodecurnex.github.com/
+
+3. Open the console by pressing F12 or whatever key your browser use. You may need to select tab 'Console' (tested on Chrome and Internet Explorer 10)
+
+4. Paste the below code (within the console)
+
+```javascript
+// This line taken from J50Npi.min.js (within this repo)
+var J50Npi={currentScript:null,getJSON:function(b,d,h){var g=b+(b.indexOf("?")+1?"&":"?");var c=document.getElementsByTagName("head")[0];var a=document.createElement("script");var f=[];var e="";this.success=h;d.callback="J50Npi.success";for(e in d){f.push(e+"="+encodeURIComponent(d[e]))}g+=f.join("&");a.type="text/javascript";a.src=g;if(this.currentScript){c.removeChild(currentScript)}c.appendChild(a)},success:null};
+
+// This is a WorldIP free geo-location database.
+var url = "http://api.wipmania.com/jsonp";
+
+// No specific data need to be sent there
+var data = {};
+
+// We need a function callback to be executed after the response is received
+var callback = function(geodata){ alert(geodata.address.country); };
+
+// And here is the magic:
+J50Npi.getJSON(url, data, callback);
+```
+
+You should see an alert saying your current (ip based location) country name after half a second or so.
