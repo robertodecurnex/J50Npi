@@ -24,7 +24,22 @@ J50Npi.getJSON(url, data, callback);
 
 Note that the given url does not need a callback parameter. It will be set automatically to **J50Npi.success** that will be the one executing the given callback function.
 
+## Notes
 
+This library expect your JSON calls to accept a `callback` parameter on the url and use that function name to wrap the JSON response.
+
+### Exmaple
+
+http://example.com/resource.json
+
+    {"key":"value"}
+    
+http://example.com/resource.json?callback=J50Npi.success
+
+    J50Npi.success({"key":"value"});
+    
+Note that you can ignore the callback param and just hardcode your responses to return this `J50Npi.success(your_json_here);` [but this is a terrible idea :P]. 
+    
 ## Step by Step Beginner's Sample
 
 1. Open your Browser
