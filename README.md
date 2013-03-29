@@ -28,7 +28,7 @@ Note that the given url does not need a callback parameter. It will be set autom
 
 This library expect your JSON calls to accept a `callback` parameter on the url and use that function name to wrap the JSON response.
 
-### Exmaple
+### Example
 
 http://example.com/resource.json
 
