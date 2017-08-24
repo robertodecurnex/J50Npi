@@ -8,8 +8,6 @@ Roberto Decurnex (nex.development@gmail.com)
 
 ## Download
 
-You clone the project with Git by running:
-
     $ git clone git://github.com/robertodecurnex/J50Npi
 
 ## Quick Sample
