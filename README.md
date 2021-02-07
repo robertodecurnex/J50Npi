@@ -4,7 +4,7 @@ Basic JSONP helper (pure JS)
 
 ## Authors
 
-Roberto Decurnex (nex.development@gmail.com)
+Roberto Decurnex
 
 ## Download
 
